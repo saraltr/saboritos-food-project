@@ -1,0 +1,132 @@
+:root {
+
+    /* fonts */
+    --headline-font: "Concert One", cursive;
+    --body-font: "Kanit", sans-serif;
+
+    /* colors */
+    --primary-color: #5a97ba;
+    --secondary-color: #357266;
+    --terciary-color: #a53c3e;
+    --quaternary-color: #cdaf41;
+
+    /* gradient */
+    --green-gradient: linear-gradient(to right, #ff4e51e2, #e8d059e9);;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--headline-font);
+}
+h1 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+a, li, p {
+    font-family: var(--body-font);
+}
+header {
+    background: var(--green-gradient);
+}
+
+body {
+    background: var(--green-gradient);
+}
+
+#mainNav, #mainNav a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+#mainNav ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+nav ul {
+    list-style: none;
+}
+
+header {
+    padding: 2rem;
+    position: relative;
+}
+
+.hero {
+    background-image: url("/src/images/empanadas-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0;
+    color: white;
+    text-align: center;
+    position: relative; 
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 1; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+}
+
+
+/* CSS */
+.button-51 {
+  background-color: transparent;
+  border: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: var(--quaternary-color);
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: var(--terciary-color);
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
