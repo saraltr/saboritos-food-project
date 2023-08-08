@@ -1,0 +1,43 @@
+{
+    "menu": [
+      {
+        "nom": "Buñuelos",
+        "prix": "2.5 €"
+      },
+      {
+        "nom": "Arepas",
+        "prix": "3.0 €"
+      },
+      {
+        "nom": "Empanadas",
+        "prix": "2.75 €"
+      },
+      {
+        "nom": "Corn Dog",
+        "prix": "4.0 €"
+      },
+      {
+        "nom": "Choux à la crème",
+        "prix": "3.5 €"
+      },
+      {
+        "nom": "Beignets",
+        "prix": {
+          "paquetDe6": "10 €",
+          "paquetDe12": "18 €"
+        }
+      },
+      {
+        "nom": "Café aux céréales",
+        "prix": "2.25 €"
+      },
+      {
+        "nom": "Biscuits sablés",
+        "prix": {
+          "paquetDe4": "5 €",
+          "paquetDe8": "9 €"
+        }
+      }
+    ]
+  }
+  
