@@ -8,7 +8,8 @@
     --primary-color: #5a97ba;
     --secondary-color: #357266;
     --terciary-color: #a53c3e;
-    --quaternary-color: #cdaf41;
+    --quaternary-color: #c29f22;
+    --background: #272727;
 
     /* gradient */
     --green-gradient: linear-gradient(to right, #ff4e51e2, #e8d059e9);;
@@ -31,7 +32,7 @@ header {
 }
 
 body {
-  background-color: #272727;
+  background-color: var(--background)
 }
 
 #mainNav, #mainNav a {
